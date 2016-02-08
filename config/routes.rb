@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get '/sign_ups' => 'sign_ups#create'
+  post '/sign_ups' => 'sign_ups#create'
+  get '/' => 'sign_ups#new'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
