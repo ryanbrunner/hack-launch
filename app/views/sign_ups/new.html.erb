@@ -1,10 +1,18 @@
-<h1>Sign Up for HackLaunch!</h1>
-
-<p>It's the best!</p>
+<div class="jumbotron">
+  <h1>Sign Up for my Amazing Project!</h1>
+  <p>Features! Probably no bugs! Nice-looking pictures
+  of some sort! The possibilities are endless.</p>
+</div>
 
 <form action='/sign_ups' method='post'>
-    Your Name: <input type='text' name='name' />
-    Your Email: <input type='text' name='email' />
-    
-    <input type='submit' />
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="name" class="form-control" id="name" placeholder="Your Name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Your Email">
+  </div>
+
+  <input type='submit' class='btn btn-primary' />
 </form>
